@@ -1,5 +1,5 @@
-import proxy.StudentProxy;
 import org.junit.Test;
+import proxy.StudentProxy;
 import service.impl.IStudentServiceImpl;
 import transaction.Transaction;
 
