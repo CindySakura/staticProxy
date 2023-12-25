@@ -8,7 +8,7 @@ import java.lang.reflect.Method;
 public class TransactionHandler implements InvocationHandler {
     //增强类对象
     private Transaction transaction;
-    //需要代理的目标对象 接口类？
+    //需要代理的目标对象
     private Object obj;
 
     public TransactionHandler(Transaction transaction,Object obj) {
