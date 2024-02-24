@@ -1,22 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  Licensed to the Apache Software Foundation (ASF) under one or more
-  contributor license agreements.  See the NOTICE file distributed with
-  this work for additional information regarding copyright ownership.
-  The ASF licenses this file to You under the Apache License, Version 2.0
-  (the "License"); you may not use this file except in compliance with
-  the License.  You may obtain a copy of the License at
-
-      http://www.apache.org/licenses/LICENSE-2.0
-
-  Unless required by applicable law or agreed to in writing, software
-  distributed under the License is distributed on an "AS IS" BASIS,
-  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  See the License for the specific language governing permissions and
-  limitations under the License.
--->
-
-<!--
   - This is the Cocoon web-app configurations file
   -
   - $Id$
@@ -25,7 +8,6 @@
          xmlns="http://java.sun.com/xml/ns/j2ee"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
-
   <!-- Servlet Configuration ========================================== -->
 
   <!--
@@ -33,34 +15,22 @@
     -->
   <!-- 配置SpringMVC的前端控制器，对浏览器发送的请求统一进行处理 -->
   <servlet>
-    <description>Cocoon blocks dispatcher</description>
-    <display-name>springMVC</display-name>
     <servlet-name>springMVC</servlet-name>
     <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
     <!-- 通过初始化参数指定SpringMVC配置文件的位置和名称 -->
     <init-param>
       <!-- contextConfigLocation为固定值 -->
       <param-name>contextConfigLocation</param-name>
-      <!--classpath:类路径，表示java和resources的路径-->
       <!-- 使用classpath:表示从类路径查找配置文件，例如maven工程中的src/main/resources -->
       <param-value>classpath:springMVC.xml</param-value>
     </init-param>
     <!--
          作为框架的核心组件，在启动过程中有大量的初始化操作要做
-        而这些操作放在第一次请求时才执行(<0或者不填load-on-startup)会严重影响访问速度
-        因此需要通过此标签将启动控制DispatcherServlet的初始化时间提前到服务器启动时(>=0)
+        而这些操作放在第一次请求时才执行会严重影响访问速度
+        因此需要通过此标签将启动控制DispatcherServlet的初始化时间提前到服务器启动时
     -->
     <load-on-startup>1</load-on-startup>
   </servlet>
-
-  <!-- URL space mappings ============================================= -->
-
-  <!--
-    - Cocoon handles all the URL space assigned to the webapp using its sitemap.
-    - It is recommended to leave it unchanged. Under some circumstances though
-    - (like integration with proprietary webapps or servlets) you might have
-    - to change this parameter.
-    -->
   <servlet-mapping>
     <servlet-name>springMVC</servlet-name>
     <!--
