@@ -5,7 +5,19 @@
     <title>Home</title>
 </head>
 <body>
+
 <h1>Home</h1>
-<a th:href="@{/target}">访问目标页面target.html</a>
+<a th:href="@{/target}">访问目标页面target.html</a><br>
+<a th:href="@{/testServletAPI(username='admin',pw=123456)}">测试使用ServletAPI获取请求参数</a><br>
+<a th:href="@{/testParam(username='admin',pw=123456)}">测试使用控制器的形参获取请求参数</a><br>
+<form th:action="@{testParam}" method="get">
+    username：<input type="text" name="username"><br>
+    pw：<input type="password" name="pw"><br>
+    hobby：<input type="checkbox" name="hobby" value="a">a
+    <input type="checkbox" name="hobby" value="b">b
+    <input type="checkbox" name="hobby" value="c">c
+    <br>
+    <input type="submit" value="测试使用控制器的形参获取请求参数">
+</form>
 </body>
 </html>
