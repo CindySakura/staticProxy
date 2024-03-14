@@ -2,6 +2,7 @@ package controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -36,7 +37,9 @@ public class HelloController {
     //若请求参数中出现多个同名的请求参数，可以在控制器方法的形参位置设置字符串类型或字符串数组来接收此请求参数
     //若使用字符串类型：最终结果为请求参数的每一个值之间使用逗号进行拼接的
     
-    public String testParam(String username, String pw, String[] hobby){
+    public String testParam(@RequestParam(value = "user_name", required = false) String username,
+                            String pw,
+                            String[] hobby){
         System.out.println("username: " +username + " pw: "+ pw + " hobby: "+ Arrays.toString(hobby));
         return "success";
     }
