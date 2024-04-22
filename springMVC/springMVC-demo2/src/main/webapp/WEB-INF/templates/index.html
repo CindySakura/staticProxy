@@ -19,5 +19,14 @@
     <br>
     <input type="submit" value="测试使用控制器的形参获取请求参数">
 </form>
+<form th:action="@{testBean}" method="post">
+    username：<input type="text" name="userName"><br>
+    pw：<input type="password" name="pw"><br>
+    hobby：<input type="checkbox" name="hobby" value="a">a
+    <input type="checkbox" name="hobby" value="b">b
+    <input type="checkbox" name="hobby" value="c">c
+    <br>
+    <input type="submit" value="测试使用实体类接收请求参数">
+</form>
 </body>
 </html>

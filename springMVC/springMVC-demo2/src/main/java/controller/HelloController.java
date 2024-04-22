@@ -1,5 +1,6 @@
 package controller;
 
+import bean.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.CookieValue;
 import org.springframework.web.bind.annotation.RequestHeader;
@@ -51,6 +52,12 @@ public class HelloController {
         System.out.println("username: " +username + " pw: "+ pw + " hobby: "+ Arrays.toString(hobby));
         System.out.println("host: " + host);
         System.out.println("JSESSIONID: "+ JSESSIONID);
+        return "success";
+    }
+
+    @RequestMapping("/testBean")
+    public String testBean(User user){
+        System.out.println(user);
         return "success";
     }
 }
