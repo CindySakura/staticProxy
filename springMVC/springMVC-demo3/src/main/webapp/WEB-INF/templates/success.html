@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+因为是转发所以可以获取共享的数据<br>
+success<br>
+<!--访问请求域中的数据：直接写共享数据的键
+    访问session中的数据：session.共享数据的键
+    访问servletContext中的数据：application.共享数据的键-->
+<p th:text="${testRequestScope}"></p>
+</body>
+</html>
