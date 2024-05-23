@@ -5,12 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a0446e5-3e8c-416f-96c7-febba09230ab" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/springMVC-demo3/src/main/java/mvc/controller/ViewController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springMVC-demo3/src/main/webapp/WEB-INF/templates/test_view.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../fileUpload/src/main/java/common/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/../fileUpload/src/main/java/common/Result.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../fileUpload/src/main/java/controller/FileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../fileUpload/src/main/java/controller/FileController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/springMVC-demo3/src/main/java/mvc/controller/ScopeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springMVC-demo3/src/main/java/mvc/controller/ScopeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springMVC-demo3/src/main/java/mvc/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springMVC-demo3/src/main/java/mvc/controller/TestController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/springMVC-demo3/src/main/webapp/WEB-INF/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/springMVC-demo3/src/main/webapp/WEB-INF/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/springMVC-demo3/src/main/webapp/WEB-INF/templates/success.html" beforeDir="false" afterPath="$PROJECT_DIR$/springMVC-demo3/src/main/webapp/WEB-INF/templates/success.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springMVC-demo3/target/classes/mvc/controller/ScopeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/springMVC-demo3/target/classes/mvc/controller/ScopeController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +24,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
