@@ -19,4 +19,12 @@ public class ViewController {
     public String testForward(){
         return "forward:/testThymeleafView";
     }
+
+    @RequestMapping("testRedirect")
+    public String testRedirect(){
+        //重定向到一个请求，而不是一个页面
+        //因为重定向无法访问web inf目录下的html页面
+        //并且现在的页面都需要通过thymeleaf解析，所以只能通过转发来访问Thymeleaf
+        return "redirect:/testThymeleafView";
+    }
 }
