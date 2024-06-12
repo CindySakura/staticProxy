@@ -32,6 +32,7 @@
       </bean>
     </property>
   </bean>
+  <!--需要在添加Servlet的配置：xmlns:mvc-->
   <mvc:view-controller path="/" view-name="ïndex"></mvc:view-controller>
   <!--开启mvc注解驱动的标签：-->
   <mvc:annotation-driven />
