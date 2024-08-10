@@ -9,11 +9,11 @@
   <filter>
     <filter-name>CharacterEncodingFilter</filter-name>
     <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
-    <init-param>
+    <init-param><!--初始化参数-->
       <param-name>encoding</param-name>
       <param-value>UTF-8</param-value>
     </init-param>
-    <init-param>
+    <init-param> <!--响应的编码-->
       <param-name>forceResponseEncoding</param-name>
       <param-value>true</param-value>
     </init-param>
@@ -46,7 +46,7 @@
     <init-param>
       <!-- contextConfigLocation为固定值 -->
       <param-name>contextConfigLocation</param-name>
-      <!-- 使用classpath:表示从类路径查找配置文件，例如maven工程中的src/main/resources -->
+      <!-- 设置springMVC自定义配置文件的位置和名称 使用classpath:表示从类路径查找配置文件，例如maven工程中的src/main/resources -->
       <param-value>classpath:springMVC.xml</param-value>
     </init-param>
     <!--
