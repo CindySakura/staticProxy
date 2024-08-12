@@ -5,19 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a0446e5-3e8c-416f-96c7-febba09230ab" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/springMVC-rest/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springMVC-rest/src/main/java/mvc/bean/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springMVC-rest/src/main/java/mvc/controller/EmployeeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springMVC-rest/src/main/java/mvc/dao/EmployeeDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springMVC-rest/src/main/resources/springMVC.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springMVC-rest/src/main/webapp/WEB-INF/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springMVC-rest/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springMVC-rest/src/main/webapp/WEB-INF/templates/employee_list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../fileUpload/src/main/java/common/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/../fileUpload/src/main/java/common/Result.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../fileUpload/src/main/java/controller/FileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../fileUpload/src/main/java/controller/FileController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springMVC-demo3/src/main/webapp/WEB-INF/templates/test_rest.html" beforeDir="false" afterPath="$PROJECT_DIR$/springMVC-demo3/src/main/webapp/WEB-INF/templates/test_rest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springMVC-demo3/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springMVC-demo3/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springMVC-demo2/target/classes/bean/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/springMVC-demo2/target/classes/bean/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springMVC-demo3/src/main/resources/springMVC.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springMVC-demo3/src/main/resources/springMVC.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springMVC-rest/src/main/java/mvc/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springMVC-rest/src/main/java/mvc/controller/EmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springMVC-rest/src/main/resources/springMVC.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springMVC-rest/src/main/resources/springMVC.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springMVC-rest/src/main/webapp/WEB-INF/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/springMVC-rest/src/main/webapp/WEB-INF/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +86,7 @@
       <recent name="controller" />
     </key>
   </component>
-  <component name="RunManager" selected="Smart Tomcat.springMVC-demo3">
+  <component name="RunManager" selected="Smart Tomcat.springMVC-rest">
     <configuration name="springMVC-demo2" type="com.poratu.idea.plugins.tomcat">
       <predefined_log_file enabled="true" id="Tomcat Localhost Log" />
       <predefined_log_file enabled="true" id="Tomcat Access Log" />
@@ -123,6 +119,9 @@
       <option name="catalinaBase" value="C:\Users\Siyue Chen\.SmartTomcat\springMVC\springMVC-demo1" />
       <option name="contextPath" value="/springMVC-demo3" />
       <option name="docBase" value="E:\java project\springMVC\springMVC-demo3\src\main\webapp" />
+      <option name="envOptions">
+        <map />
+      </option>
       <option name="extraClassPath" value="" />
       <option name="tomcatInfo">
         <TomcatInfo>
@@ -133,6 +132,32 @@
       </option>
       <option name="vmOptions" value="" />
       <module name="springMVC-demo3" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="springMVC-rest" type="com.poratu.idea.plugins.tomcat">
+      <predefined_log_file enabled="true" id="Tomcat Localhost Log" />
+      <predefined_log_file enabled="true" id="Tomcat Access Log" />
+      <predefined_log_file id="Tomcat Catalina Log" />
+      <predefined_log_file id="Tomcat Manager Log" />
+      <predefined_log_file id="Tomcat Host Manager Log" />
+      <option name="catalinaBase" value="C:\Users\Siyue Chen\.SmartTomcat\springMVC\springMVC-demo1" />
+      <option name="contextPath" value="/springMVC-rest" />
+      <option name="docBase" value="$PROJECT_DIR$/springMVC-rest/src/main/webapp" />
+      <option name="envOptions">
+        <map />
+      </option>
+      <option name="extraClassPath" value="" />
+      <option name="tomcatInfo">
+        <TomcatInfo>
+          <option name="name" value="Apache Tomcat/9.0.86" />
+          <option name="path" value="D:/apache-tomcat-9.0.86" />
+          <option name="version" value="9.0.86.0" />
+        </TomcatInfo>
+      </option>
+      <option name="vmOptions" value="" />
+      <module name="springMVC-rest" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -164,6 +189,7 @@
       <item itemvalue="Smart Tomcat.springMVC-demo2" />
       <item itemvalue="Smart Tomcat.springMVC" />
       <item itemvalue="Smart Tomcat.springMVC-demo3" />
+      <item itemvalue="Smart Tomcat.springMVC-rest" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
