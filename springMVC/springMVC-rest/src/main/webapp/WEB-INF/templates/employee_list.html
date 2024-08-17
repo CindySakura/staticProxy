@@ -5,7 +5,7 @@
     <title>Employee Info</title>
 </head>
 <body>
-    <table border="1" cellpadding="0" cellspacing="0" style="text-align: center;" id="dataTable">
+    <table id= "dataTable" border="1" cellpadding="0" cellspacing="0" style="text-align: center;">
         <tr>
             <th colspan="5">Employee Info</th>
         </tr>
@@ -33,5 +33,23 @@
         <input type="hidden" name="_method" value="delete"/>
     </form>
     <script type="text/javascript" th:src="@{/static/js/vue.js}"></script>
+    <script type="text/javascript">
+        var vue = new Vue({
+            el:"#dataTable",
+            methods:{
+                //event表示当前事件
+                deleteEmployee:function (event) {
+                    //通过id获取表单标签
+                    var delete_form = document.getElementById("delete_form");
+                    //将触发事件的超链接的href属性为表单的action属性赋值
+                    delete_form.action = event.target.href;
+                    //提交表单
+                    delete_form.submit();
+                    //阻止超链接的默认跳转行为
+                    event.preventDefault();
+                }
+            }
+        });
+    </script>
 </body>
 </html>
