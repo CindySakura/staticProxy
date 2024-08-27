@@ -1,5 +1,6 @@
 package mvc.controller;
 
+import mvc.bean.User;
 import org.springframework.http.RequestEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -46,4 +47,9 @@ public class HttpController {
         return "testResponseBody success";
     }
 
+    @RequestMapping("/testResponseUser")
+    @ResponseBody
+    public User testResponseUser(){
+        return new User(1,"amy","123",12,"female");
+    }
 }
