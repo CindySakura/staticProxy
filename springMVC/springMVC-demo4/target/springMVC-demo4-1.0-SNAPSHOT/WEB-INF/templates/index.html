@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<body>
+<h1>首页</h1>
+<form th:action="@{/testRequestBody}" method="post">
+    用户名：<input type="text" name="username"><br>
+    密码：<input type="password" name="password"><br>
+    <input type="submit" value="test requestBody">
+</form>
+<form th:action="@{/testRequestEntity}" method="post">
+    用户名：<input type="text" name="username"><br>
+    密码：<input type="password" name="password"><br>
+    <input type="submit" value="test requestBody">
+</form>
+<a th:href="@{/testResponse}">通过servletAPI的response对象来响应浏览器的数据</a><br>
+<a th:href="@{/testResponseBody}">通过responseBody来响应浏览器的数据</a><br>
+<a th:href="@{/testResponseUser}">通过responseBody来响应User对象</a><br>
+</body>
+</html>

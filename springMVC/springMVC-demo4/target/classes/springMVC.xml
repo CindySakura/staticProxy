@@ -34,8 +34,7 @@
   </bean>
   <!--需要在添加Servlet的配置：xmlns:mvc-->
   <mvc:view-controller path="/" view-name="index"></mvc:view-controller>
-  <mvc:view-controller path="/test_view" view-name="/test_view"></mvc:view-controller>
-  <mvc:view-controller path="/test_rest" view-name="/test_rest"></mvc:view-controller>
+  <mvc:view-controller path="/file" view-name="/file"></mvc:view-controller>
   <!--开放对静态资源的访问-->
   <mvc:default-servlet-handler />
   <!--开启mvc注解驱动的标签：-->
