@@ -34,10 +34,13 @@
   </bean>
   <!--需要在添加Servlet的配置：xmlns:mvc-->
   <mvc:view-controller path="/" view-name="index"></mvc:view-controller>
+  <!--只需要实现页面跳转 不需要实现别的请求-->
   <mvc:view-controller path="/file" view-name="/file"></mvc:view-controller>
   <!--开放对静态资源的访问-->
   <mvc:default-servlet-handler />
   <!--开启mvc注解驱动的标签：-->
   <mvc:annotation-driven />
 
+  <!--必须通过文件解析器的解析才能将文件封装为MultipartFile对象 一定要写id 因为SpringMVC是通过id获取bean的 普通的可以通过id或类型获取bean-->
+  <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver"></bean>
 </beans>
