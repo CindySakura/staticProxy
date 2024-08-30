@@ -5,16 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a0446e5-3e8c-416f-96c7-febba09230ab" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springMVC-demo5/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springMVC-demo5/src/main/java/mvc/controller/TestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springMVC-demo5/src/main/java/mvc/interceptor/FirstInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springMVC-demo5/src/main/resources/springMVC.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springMVC-demo5/src/main/webapp/WEB-INF/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springMVC-demo5/src/main/webapp/WEB-INF/templates/success.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springMVC-demo5/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../fileUpload/src/main/java/common/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/../fileUpload/src/main/java/common/Result.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../fileUpload/src/main/java/controller/FileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../fileUpload/src/main/java/controller/FileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springMVC-demo4/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springMVC-demo4/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/springMVC-demo4/src/main/java/mvc/controller/FileUpAndDownController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springMVC-demo4/src/main/java/mvc/controller/FileUpAndDownController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springMVC-demo4/src/main/resources/springMVC.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springMVC-demo4/src/main/resources/springMVC.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springMVC-demo4/src/main/webapp/WEB-INF/templates/file.html" beforeDir="false" afterPath="$PROJECT_DIR$/springMVC-demo4/src/main/webapp/WEB-INF/templates/file.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springMVC-demo4/target/classes/springMVC.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springMVC-demo4/target/classes/springMVC.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springMVC-demo4/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/springMVC-demo4/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springMVC-demo4/target/springMVC-demo4-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/springMVC-demo4/target/springMVC-demo4-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springMVC-demo4/target/classes/mvc/controller/FileUpAndDownController.class" beforeDir="false" afterPath="$PROJECT_DIR$/springMVC-demo4/target/classes/mvc/controller/FileUpAndDownController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +29,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -69,7 +74,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/springMVC-demo4/src/main/webapp/static/js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/springMVC-demo5/src/main/webapp/WEB-INF/templates" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -77,11 +82,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\java project\springMVC\springMVC-demo5\src\main\webapp\WEB-INF\templates" />
+      <recent name="E:\java project\springMVC\springMVC-demo5\src\main\resources" />
+      <recent name="E:\java project\springMVC\springMVC-demo5\src\main\webapp\WEB-INF" />
       <recent name="E:\java project\springMVC\springMVC-demo4\src\main\webapp\static\js" />
       <recent name="E:\java project\springMVC\springMVC-demo4\src\main\webapp\WEB-INF" />
-      <recent name="E:\java project\springMVC\springMVC-demo4\src\main\resources" />
-      <recent name="E:\java project\springMVC\springMVC-rest\src\main\webapp\WEB-INF\templates" />
-      <recent name="E:\java project\springMVC\springMVC-rest\src\main\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\java project\springMVC\springMVC-demo5\src\main\webapp\WEB-INF\templates" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="controller" />

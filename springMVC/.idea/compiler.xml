@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="springMVC-demo1" />
         <module name="springMVC-demo2" />
+        <module name="springMVC-demo5" />
         <module name="springMVC-demo3" />
         <module name="springMVC-rest" />
         <module name="springMVC-demo4" />

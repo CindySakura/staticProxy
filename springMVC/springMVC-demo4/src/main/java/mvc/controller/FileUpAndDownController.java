@@ -51,6 +51,7 @@ public class FileUpAndDownController {
     @RequestMapping("/testUp")
     //获取服务器路径需要有session
     public String testUp(MultipartFile photo,HttpSession httpSession) throws IOException {
+        //获取服务器中photo目录的路径
         ServletContext servletContext = httpSession.getServletContext();
         String photoPath = servletContext.getRealPath("photo");
         File file = new File(photoPath);
@@ -61,8 +62,9 @@ public class FileUpAndDownController {
         String name = photo.getName();
         //获取的是上传的文件名
         String fileName = photo.getOriginalFilename();
-        //处理文件重名问题
+        //处理文件重名问题，获取上传文件的后缀名
         String hzName = fileName.substring(fileName.lastIndexOf("."));
+        //将UUID和文件后缀作为文件名
         fileName = UUID.randomUUID().toString() + hzName;
         photo.transferTo(new File(photoPath + File.separator + fileName));
         return "success";
