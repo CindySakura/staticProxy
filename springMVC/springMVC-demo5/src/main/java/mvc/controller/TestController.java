@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  */
 @Controller
 public class TestController {
+    // /**/testInterceptor ?表示一个字符 *表示一个或多个字符 **表示一层或多层目录
     @RequestMapping("/testInterceptor")
     public String testInterceptor(){
         return "success";

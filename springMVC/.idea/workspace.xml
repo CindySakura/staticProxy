@@ -5,21 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a0446e5-3e8c-416f-96c7-febba09230ab" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springMVC-demo5/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springMVC-demo5/src/main/java/mvc/controller/TestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springMVC-demo5/src/main/java/mvc/interceptor/FirstInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springMVC-demo5/src/main/resources/springMVC.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springMVC-demo5/src/main/webapp/WEB-INF/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springMVC-demo5/src/main/webapp/WEB-INF/templates/success.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springMVC-demo5/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../fileUpload/src/main/java/common/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/../fileUpload/src/main/java/common/Result.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../fileUpload/src/main/java/controller/FileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../fileUpload/src/main/java/controller/FileController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springMVC-demo4/src/main/java/mvc/controller/FileUpAndDownController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springMVC-demo4/src/main/java/mvc/controller/FileUpAndDownController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springMVC-demo4/target/classes/mvc/controller/FileUpAndDownController.class" beforeDir="false" afterPath="$PROJECT_DIR$/springMVC-demo4/target/classes/mvc/controller/FileUpAndDownController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springMVC-demo5/src/main/java/mvc/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springMVC-demo5/src/main/java/mvc/controller/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springMVC-demo5/src/main/java/mvc/interceptor/FirstInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/springMVC-demo5/src/main/java/mvc/interceptor/FirstInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springMVC-demo5/src/main/resources/springMVC.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springMVC-demo5/src/main/resources/springMVC.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +86,7 @@
       <recent name="controller" />
     </key>
   </component>
-  <component name="RunManager" selected="Smart Tomcat.springMVC-demo4">
+  <component name="RunManager" selected="Smart Tomcat.springMVC-demo5">
     <configuration name="springMVC-demo2" type="com.poratu.idea.plugins.tomcat">
       <predefined_log_file enabled="true" id="Tomcat Localhost Log" />
       <predefined_log_file enabled="true" id="Tomcat Access Log" />
@@ -142,15 +133,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="springMVC-demo4" type="com.poratu.idea.plugins.tomcat">
+    <configuration name="springMVC-demo5" type="com.poratu.idea.plugins.tomcat">
       <predefined_log_file enabled="true" id="Tomcat Localhost Log" />
       <predefined_log_file enabled="true" id="Tomcat Access Log" />
       <predefined_log_file id="Tomcat Catalina Log" />
       <predefined_log_file id="Tomcat Manager Log" />
       <predefined_log_file id="Tomcat Host Manager Log" />
       <option name="catalinaBase" value="C:\Users\Siyue Chen\.SmartTomcat\springMVC\springMVC-demo1" />
-      <option name="contextPath" value="/springMVC-demo4" />
-      <option name="docBase" value="$PROJECT_DIR$/springMVC-demo4/src/main/webapp" />
+      <option name="contextPath" value="/springMVC-demo5" />
+      <option name="docBase" value="$PROJECT_DIR$/springMVC-demo5/src/main/webapp" />
+      <option name="envOptions">
+        <map />
+      </option>
       <option name="extraClassPath" value="" />
       <option name="tomcatInfo">
         <TomcatInfo>
@@ -160,7 +154,7 @@
         </TomcatInfo>
       </option>
       <option name="vmOptions" value="" />
-      <module name="springMVC-demo4" />
+      <module name="springMVC-demo5" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -216,7 +210,7 @@
       <item itemvalue="Smart Tomcat.springMVC" />
       <item itemvalue="Smart Tomcat.springMVC-demo3" />
       <item itemvalue="Smart Tomcat.springMVC-rest" />
-      <item itemvalue="Smart Tomcat.springMVC-demo4" />
+      <item itemvalue="Smart Tomcat.springMVC-demo5" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
