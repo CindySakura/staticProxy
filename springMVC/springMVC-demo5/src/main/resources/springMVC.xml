@@ -48,16 +48,18 @@
 <!--    <bean class="mvc.interceptor.FirstInterceptor"></bean>-->
 
     <!--第二种方式 ref同bean 都无法设置拦截规则 会对所有请求都拦截，ref可以引用当前ioc容器某个bean的id 需要把FirstInterceptor通过标识组件的方式 标识为一个bean交给容器管理（加注解 因为是普通组件 所以加component就行）-->
-<!--    <ref bean="firstInterceptor"></ref>-->
+    <!-- 若有多个拦截器 按配置的顺序执行-->
+        <ref bean="firstInterceptor"></ref>
+        <ref bean="secondInterceptor"></ref>
     <!-- 以上两种配置方式都是对DispatcherServlet所处理的所有的请求进行拦截 -->
 
     <!--第三种方式 可以通过ref或bean标签设置拦截器，通过mvc:mapping设置需要拦截的请求，通过mvc:exclude-mapping设置需要排除的请求，即不需要拦截的请求-->
-    <mvc:interceptor>
-      <!--只能拦截一层 两层要用/**-->
-      <mvc:mapping path="/**"/>
-      <mvc:exclude-mapping path="/"/>
-      <ref bean="firstInterceptor"></ref>
-    </mvc:interceptor>
+<!--    <mvc:interceptor>-->
+<!--      &lt;!&ndash;只能拦截一层 两层要用/**&ndash;&gt;-->
+<!--      <mvc:mapping path="/**"/>-->
+<!--      <mvc:exclude-mapping path="/"/>-->
+<!--      <ref bean="firstInterceptor"></ref>-->
+<!--    </mvc:interceptor>-->
   </mvc:interceptors>
 
 </beans>

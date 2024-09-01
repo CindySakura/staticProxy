@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a0446e5-3e8c-416f-96c7-febba09230ab" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/springMVC-demo5/src/main/java/mvc/interceptor/SecondInterceptor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../fileUpload/src/main/java/common/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/../fileUpload/src/main/java/common/Result.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../fileUpload/src/main/java/controller/FileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../fileUpload/src/main/java/controller/FileController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springMVC-demo5/src/main/java/mvc/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springMVC-demo5/src/main/java/mvc/controller/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springMVC-demo5/src/main/java/mvc/interceptor/FirstInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/springMVC-demo5/src/main/java/mvc/interceptor/FirstInterceptor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/springMVC-demo5/src/main/resources/springMVC.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springMVC-demo5/src/main/resources/springMVC.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -83,6 +82,7 @@
       <recent name="E:\java project\springMVC\springMVC-demo5\src\main\webapp\WEB-INF\templates" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="mvc.interceptor" />
       <recent name="controller" />
     </key>
   </component>
@@ -142,9 +142,6 @@
       <option name="catalinaBase" value="C:\Users\Siyue Chen\.SmartTomcat\springMVC\springMVC-demo1" />
       <option name="contextPath" value="/springMVC-demo5" />
       <option name="docBase" value="$PROJECT_DIR$/springMVC-demo5/src/main/webapp" />
-      <option name="envOptions">
-        <map />
-      </option>
       <option name="extraClassPath" value="" />
       <option name="tomcatInfo">
         <TomcatInfo>
