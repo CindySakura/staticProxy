@@ -62,4 +62,17 @@
 <!--    </mvc:interceptor>-->
   </mvc:interceptors>
 
+<!--  <bean class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">-->
+<!--    <property name="exceptionMappings">-->
+<!--      <props>-->
+<!--        &lt;!&ndash;properties的键表示处理器方法执行过程中出现的异常-->
+<!--            properties的值表示若出现指定异常时，设置一个新的视图名称，跳转到指定页面&ndash;&gt;-->
+<!--        <prop key="java.lang.ArithmeticException">error</prop>-->
+<!--      </props>-->
+<!--    </property>-->
+
+<!--    &lt;!&ndash;设置将异常信息共享在请求域中的键 来存储异常信息 默认存储到请求域中 value是请求域中的键 异常为值&ndash;&gt;-->
+<!--    &lt;!&ndash;exceptionAttribute属性设置一个属性名，将出现的异常信息在请求域中进行共享&ndash;&gt;-->
+<!--    <property name="exceptionAttribute" value="ex"></property>-->
+<!--  </bean>-->
 </beans>
