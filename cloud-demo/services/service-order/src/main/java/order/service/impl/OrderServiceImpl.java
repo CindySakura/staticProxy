@@ -5,6 +5,7 @@ import java.util.List;
 
 import lombok.extern.slf4j.Slf4j;
 import order.bean.Order;
+import order.feign.ProductFeignClient;
 import order.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
@@ -28,12 +29,16 @@ public class OrderServiceImpl implements OrderService {
     RestTemplate restTemplate;
     @Autowired //一定导入spring-cloud-starter-loadbalancer
     LoadBalancerClient loadBalancerClient;
+    @Autowired
+    ProductFeignClient productFeignClient;
 
     @Override
     public Order createOrder(Long productId, Long userId) {
-        Product product = getProductFromRemote(productId);
-        //Product product = getProductFromRemoteWithLoaderBalancer(productId);
-        //Product product = getProductFromRemoteWithLoaderBalanceAnnotation(productId);
+        //Product product = getProductFromRemote(productId); //没有负载均衡
+        //Product product = getProductFromRemoteWithLoaderBalancer(productId); //有负载均衡
+        //Product product = getProductFromRemoteWithLoaderBalanceAnnotation(productId); //负载均衡注解版
+        Product product = productFeignClient.getProductById(productId); //使用Feign完成远程调用
+
         Order order = new Order();
         order.setId(1L);
         //订单总金额 单价*数量
