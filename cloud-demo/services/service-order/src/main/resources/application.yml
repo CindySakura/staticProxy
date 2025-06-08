@@ -1,0 +1,42 @@
+server:
+  port: 8000
+spring:
+  #项目的环境标识
+  profiles:
+    active: prod
+  application:
+    name: service-order
+  cloud:
+    nacos:
+      server-addr: 127.0.0.1:8848
+      #指定加载的命名空间 没有的话默认是public命名空间下的DEFAULT_GROUP组
+      config:
+        namespace: ${spring.profiles.active:public}
+
+---
+#动态加载指定的配置文件
+spring:
+  config:
+    import:
+      - nacos:common.properties?group=order
+      - nacos:database.properties?group=order
+    activate:
+      on-profile: dev
+---
+spring:
+  config:
+    import:
+      - nacos:common.properties?group=order
+      - nacos:database.properties?group=order
+      - nacos:hehe.properties?group=order
+    activate:
+      on-profile: test
+---
+spring:
+  config:
+    import:
+      - nacos:common.properties?group=order
+      - nacos:database.properties?group=order
+      - nacos:hehe.properties?group=order
+    activate:
+      on-profile: prod
