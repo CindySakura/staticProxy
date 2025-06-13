@@ -1,0 +1,14 @@
+spring:
+  cloud:
+    openfeign:
+      client:
+        config:
+          #默认配置
+          default:
+            connectTimeout: 1000
+            readTimeout: 2000 #单位为毫秒
+          #需要指定OpenFeign客户端的名字，就是@FeignClient里面的Value值，且在负载均衡的情况下，该Value值还是微服务的名字，更精确的应该是指定contextID为客户端的名字，如果不写，默认与Value值一样
+          #精确配置
+          service-product:
+            connectTimeout: 3000
+            readTimeout: 5000 #单位为毫秒

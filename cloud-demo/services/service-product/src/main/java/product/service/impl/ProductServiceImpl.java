@@ -1,5 +1,6 @@
 package product.service.impl;
 import java.math.BigDecimal;
+import java.util.concurrent.TimeUnit;
 
 import org.springframework.stereotype.Service;
 import product.bean.Product;
@@ -20,6 +21,12 @@ public class ProductServiceImpl implements ProductService {
         product.setPrice(new BigDecimal("99"));
         product.setProductName("苹果");
         product.setNum(2);
+
+        try {
+            TimeUnit.SECONDS.sleep(100);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 
         return product;
     }

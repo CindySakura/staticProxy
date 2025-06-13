@@ -4,6 +4,7 @@ spring:
   #项目的环境标识
   profiles:
     active: prod
+    include: feign
   application:
     name: service-order
   cloud:
@@ -12,7 +13,9 @@ spring:
       #指定加载的命名空间 没有的话默认是public命名空间下的DEFAULT_GROUP组
       config:
         namespace: ${spring.profiles.active:public}
-
+logging:
+  level:
+    order.feign: debug
 ---
 #动态加载指定的配置文件
 spring:
